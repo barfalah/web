@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+} 
+
+#home .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+.projects-list{
+    display:flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+    .projects-list{
+    flex-direction: row;
+        flex-wrap: wrap;
+    }
+.projects{
+        width: 46%;
+    }
+.projects-img{
+    width: 100%;
+    height:250px;
+}
+.projects-inner{
+     width: 100%;
+     height:100%;
+} 
+}
+
+@media screen and (min-width:992px){
+.projects{
+        width: 22%;
+}  
+
+.projects{
+    margin-bottom: 15px;
+    margin: 1%;
+}
+
+.projects-img{
+    width: 100%;
+    height:250px;
+}
+.inner-text{
+    background-color: gainsboro;
+    padding: 5px;
+}
+}
+
+/* Add everything below here */
+
+#home {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.zaha-hadid.com/wp-content/files_mf/cache/th_65d1300db123ce22f6e2569fb36764f8_1478_jsbac_modl_05.jpg');
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://img.mako.co.il/2018/05/14/HadidMIvnimKKSUIU_6_c.jpg');
+}
+
+#projects {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.pinimg.com/564x/3d/8a/c1/3d8ac129a568a9b660047a51119a2929.jpg');
+}
+
+@media screen and (max-width:768px){
+.projects{
+        flex-direction: row;
+        text-align: center;
+} 
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+.projects-inner{
+        width: 100%;
+        height:100%;
+}
+
+}
+@media screen and (max-width:992px){
+    .projects-list{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: inherit;
+    } 
+.projects-img{
+    width: 50%;
+    height:200px;
+}
+.projects-inner{
+     width: 100%;
+     height:100%;
+} 
+}
